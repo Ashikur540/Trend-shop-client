@@ -9,11 +9,11 @@ export const PopulerCategories = () => {
             </h3>
             <div className="relative container grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* 1 */}
-                <Link to="#" className="group relative block bg-black">
+                <Link to="#" className="group relative block bg-black transition-all ease-linear duration-300 overflow-hidden">
                     <img
                         alt="Mens clothing"
                         src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                        className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50  "
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
                         <p className="text-sm font-medium uppercase tracking-widest text-pink-500">

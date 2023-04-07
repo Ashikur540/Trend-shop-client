@@ -17,4 +17,12 @@ code {
   html {
     font-family: "Farro", sans-serif;
   }
+  .navbar-color {
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  }
+}
+@layer components {
+  .navbar-color {
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  }
 }

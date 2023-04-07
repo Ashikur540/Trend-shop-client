@@ -2,15 +2,31 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../Assets/Photos/Logo.png';
 export const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const allLinks = [
         { url: '/', name: 'Home' },
         { url: '/about', name: 'About' },
         { url: '/products', name: 'Products' },
         { url: '/blogs', name: 'Blogs' },
+
     ]
+
+    // console.log(isScrolled);
+
+    window.onscroll = () => {
+        // console.log(window.pageYOffset); /*defines the scroll offset */
+        const value = window.pageYOffset;
+        setIsScrolled(value === 0 ? false : true);
+        return () => window.onscroll = null;
+
+    }
+    // console.log(isScrolled);
+
+
     return (
-        <div className="z-10 px-4 w-full fixed bg-transparent  py-5 mx-auto  md:px-24 lg:px-32">
+        <div className={`z-10 px-4 w-full fixed py-5 mx-auto  md:px-24 lg:px-32 bg-gradient-to-t from-transparent to-gray-400 transition duration-300 ease-linear ${isScrolled && 'bg-white/75 bg-blur-xl'}
+        `}>
             <div className="relative flex items-center justify-between mx-auto w-full">
                 <Link
                     to="/"

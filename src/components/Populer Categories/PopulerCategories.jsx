@@ -11,7 +11,7 @@ export const PopulerCategories = () => {
                 {/* 1 */}
                 <Link to="#" className="group relative block bg-black">
                     <img
-                        alt="Developer"
+                        alt="Mens clothing"
                         src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
@@ -20,7 +20,7 @@ export const PopulerCategories = () => {
                             #20% OFF
                         </p>
 
-                        <p className="text-xl font-bold text-white sm:text-2xl">Ladies' jewelry</p>
+                        <p className="text-xl font-bold text-white sm:text-2xl">Men's clothing</p>
 
                         <div className="mt-32 sm:mt-48 lg:mt-64">
                             <div
@@ -40,13 +40,13 @@ export const PopulerCategories = () => {
                 {/* 1 */}
                 <Link to="#" className="group relative block bg-black">
                     <img
-                        alt="Developer"
-                        src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Womne's clothing"
+                        src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
                         <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
-                            #20% OFF
+                            #30% OFF
                         </p>
 
                         <p className="text-xl font-bold text-white sm:text-2xl">Ladies' jewelry</p>
@@ -69,8 +69,8 @@ export const PopulerCategories = () => {
                 {/* 1 */}
                 <Link to="#" className="group relative block bg-black w-full md:col-span-2">
                     <img
-                        alt="Developer"
-                        src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Ladies' jewelry"
+                        src="https://images.pexels.com/photos/792760/pexels-photo-792760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
@@ -89,7 +89,7 @@ export const PopulerCategories = () => {
 
                                 </p>
                                 <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
-                                    DISCOUNT CODE - VATR3920
+                                    DISCOUNT CODE - TTR3920
                                 </p>
                             </div>
                         </div>

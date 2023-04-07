@@ -1,4 +1,5 @@
 import React from 'react'
+import { Brands } from '../components/Brands/Brands'
 import { PopulerCategories } from '../components/Populer Categories/PopulerCategories'
 import { PopulerProducts } from '../components/POpuler products/PopulerProducts'
 import { Sale } from '../components/Summer Sale/Sale'
@@ -11,6 +12,7 @@ export const Home = () => {
             <PopulerCategories />
             <PopulerProducts />
             <Sale />
+            <Brands />
         </>
     )
 }

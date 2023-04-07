@@ -6,10 +6,10 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const allLinks = [
         { url: '/', name: 'Home' },
-        { url: '/about', name: 'About' },
         { url: '/products', name: 'Products' },
         { url: '/blogs', name: 'Blogs' },
 
+        { url: '/contact', name: 'Contact' },
     ]
 
     // console.log(isScrolled);

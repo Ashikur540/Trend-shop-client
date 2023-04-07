@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom"
 import Main from "../Layout/Main"
-import About from "../Pages/About/About"
 import { Blogs } from "../Pages/Blogs/Blogs"
+import { CategoryProducts } from "../Pages/Category products/CategoryProducts"
+import { Contact } from "../Pages/Contact/Contact"
 import ErrorPage from "../Pages/ErrorPage"
 import { Home } from "../Pages/Home"
 import { Products } from "../Pages/Products/Products"
@@ -26,8 +27,8 @@ const router = createBrowserRouter([
                 element: <Signup />,
             },
             {
-                path: '/about',
-                element: <About />,
+                path: '/contact',
+                element: <Contact />,
             },
             {
                 path: '/products',
@@ -36,6 +37,13 @@ const router = createBrowserRouter([
             {
                 path: '/blogs',
                 element: <Blogs />,
+            },
+            {
+                path: '/products/:category',
+
+                loader: ({ params }) => fetch(`https://fakestoreapi.com/products/category/${params.category}`),
+
+                element: < CategoryProducts />,
             },
 
         ],

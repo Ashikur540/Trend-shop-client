@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { useLoaderData } from 'react-router'
+import { Link } from 'react-router-dom'
 
-export const Products = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch("https://fakestoreapi.com/products")
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setProducts(data)
-            })
-    }, [])
-
+export const CategoryProducts = () => {
+    const products = useLoaderData()
     return (
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 ">

@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-image': "url('/src/Assets/Photos/Hero Bg.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'blog-banner': "url('/src/Assets/Photos/blog banner.png')",
       }
     },
   },

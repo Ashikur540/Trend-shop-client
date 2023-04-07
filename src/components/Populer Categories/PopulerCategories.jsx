@@ -9,7 +9,7 @@ export const PopulerCategories = () => {
             </h3>
             <div className="relative container grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* 1 */}
-                <Link to="#" className="group relative block bg-black transition-all ease-linear duration-300 overflow-hidden">
+                <Link to={`/products/men's clothing`} className="group relative block bg-black transition-all ease-linear duration-300 overflow-hidden">
                     <img
                         alt="Mens clothing"
                         src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -38,7 +38,7 @@ export const PopulerCategories = () => {
                     </div>
                 </Link>
                 {/* 1 */}
-                <Link to="#" className="group relative block bg-black">
+                <Link to="/products/women's clothing" className="group relative block bg-black">
                     <img
                         alt="Womne's clothing"
                         src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
@@ -67,7 +67,7 @@ export const PopulerCategories = () => {
                     </div>
                 </Link>
                 {/* 1 */}
-                <Link to="#" className="group relative block bg-black w-full md:col-span-2">
+                <Link to="/products/jewelery" className="group relative block bg-black w-full md:col-span-2">
                     <img
                         alt="Ladies' jewelry"
                         src="https://images.pexels.com/photos/792760/pexels-photo-792760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

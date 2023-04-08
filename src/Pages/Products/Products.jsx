@@ -8,18 +8,30 @@ export const Products = () => {
         fetch("https://fakestoreapi.com/products")
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 setProducts(data)
             })
     }, [])
 
     return (
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font min-h-screen">
             <div className="container px-5 py-24 ">
                 <div className="flex flex-wrap -m-4 justify-center items-center py-20 ">
                     {
                         products?.filter(product => product.category !== 'electronics')
-                            .map(products => <Link key={products.id} to="#" className="group relative w-[420px] max-w-md overflow-hidden">
+
+                            .map(product => <Link key={product.id} to='/product/1' className="group relative w-[420px] max-w-md overflow-hidden"
+                                initial={{
+                                    opacity: 0,
+                                    scale: 0.5,
+                                }}
+                                animate={{
+                                    opacity: 1,
+                                    scale: 1,
+
+                                }}
+                                transition={{ duration: .9, ease: 'easeInOut' }}
+                            >
 
                                 <button
                                     className="absolute right-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
@@ -43,8 +55,8 @@ export const Products = () => {
                                 </button>
 
                                 <img
-                                    src={products?.image}
-                                    alt={products?.title}
+                                    src={product?.image}
+                                    alt={product?.title}
                                     className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
                                 />
 
@@ -52,12 +64,12 @@ export const Products = () => {
                                     <span
                                         className="whitespace-nowrap bg-[rgba(241,205,186,0.66)] px-3 py-1.5 text-xs font-medium"
                                     >
-                                        {products?.rating?.count}
+                                        {product?.rating?.count}
                                     </span>
 
                                     <h3 className="mt-4 text-lg font-medium text-gray-900">Robot Toy</h3>
 
-                                    <p className="mt-1.5 text-sm text-gray-700">${products?.price}</p>
+                                    <p className="mt-1.5 text-sm text-gray-700">${product?.price}</p>
 
                                     <form className="mt-4">
                                         <button

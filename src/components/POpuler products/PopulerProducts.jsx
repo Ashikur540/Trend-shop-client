@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
 import Slider from "react-slick";
@@ -106,10 +107,28 @@ export const PopulerProducts = () => {
     //     ]
     // };
     return (
-        <section id='populer-products' className='w-full container py-12 lg:py-20 my-10 '>
-            <h3 className="text-3xl md:text-4xl font-medium tracking-normal text-slate-900 text-center my-4 md:my-12">
-                Populer products
-            </h3>
+        <motion.section id='populer-products' className='w-full container py-12 lg:py-20 my-10 '
+            initial={{ y: 100, opacity: 0, }}
+            whileInView={{ y: 0, opacity: 100 }}
+            transition={{
+                delay: 0.2,
+                x: { type: 'spring', stiffness: 60, },
+                opacity: { duration: 1.6 },
+                ease: 'easeIn',
+                duration: 1
+            }}>
+            <motion.h3 className="text-3xl md:text-4xl font-medium tracking-normal text-slate-900 text-center my-4 md:my-12"
+                initial={{ y: 70, opacity: 0, }}
+                whileInView={{ y: 0, opacity: 100 }}
+                transition={{
+                    delay: 0.2,
+                    x: { type: 'spring', stiffness: 60, },
+                    opacity: { duration: 1.6 },
+                    ease: 'easeIn',
+                    duration: 1
+                }}>
+                <span className="text-accent">Populer</span>  products
+            </motion.h3>
             <div className="w-full relative">
                 <Slider {...settings}>
                     {
@@ -120,7 +139,7 @@ export const PopulerProducts = () => {
                 </Slider>
             </div>
 
-        </section>
+        </motion.section>
     )
 }
 

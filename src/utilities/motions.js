@@ -52,3 +52,16 @@ export const wordAnimation = {
         },
     },
 };
+
+
+export const fromLeftfade = {
+    initial: { x: -100, opacity: 0, },
+    whileInView: { x: 0, opacity: 100 },
+    transition: {
+        delay: 0.2,
+        x: { type: 'spring', stiffness: 60, },
+        opacity: { duration: 1.6 },
+        ease: 'easeIn',
+        duration: 1
+    },
+}

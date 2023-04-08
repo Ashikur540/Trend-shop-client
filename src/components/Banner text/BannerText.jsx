@@ -53,3 +53,23 @@ export const BannerBottomText = ({ children }) => {
         </motion.h1>
     )
 }
+
+export const SectionHeaderText = ({ children }) => {
+    return (
+        <motion.h2 className="text-3xl font-bold text-slate-900 dark:text-white md:text-4xl"
+            variants={staggerChildren}>
+            {children.split(" ").map((word, idx) => (
+                <div key={idx} className="inline-block overflow-hidden">
+                    <motion.span
+                        className="inline-block overflow-hidden"
+                        variants={wordAnimation}
+                    >
+                        {word + "\u00A0"}
+                    </motion.span>
+                </div>
+            ))}
+
+        </motion.h2>
+    )
+}
+

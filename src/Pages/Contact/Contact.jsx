@@ -1,10 +1,21 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 // https://www.embed-map.com/
 export const Contact = () => {
     return (
         <section className="text-gray-600 body-font relative">
             <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <motion.div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+                    initial={{
+                        opacity: 0,
+                        scale: 0.5,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        scale: 1,
+                    }}
+                    transition={{ duration: .6, ease: 'easeInOut' }}
+                >
                     {/* <iframe style="height:100%;width:100%;border:0;" frameborder="0" src=""></iframe> */}
                     <iframe width="100%" height="100%" className="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=Dhaka+University,+Dhaka,+Bangladesh&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
 
@@ -21,8 +32,17 @@ export const Contact = () => {
                             <p className="leading-relaxed">+88017000000000</p>
                         </div>
                     </div>
-                </div>
-                <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                </motion.div>
+                <motion.div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+                    initial={{ x: 100, opacity: 0, }}
+                    whileInView={{ x: 0, opacity: 100 }}
+                    transition={{
+                        delay: 0.2,
+                        x: { type: 'spring', stiffness: 60, },
+                        opacity: { duration: 1.6 },
+                        ease: 'easeIn',
+                        duration: 1
+                    }}>
                     <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Contact us</h2>
                     <p className="leading-relaxed mb-5 text-gray-600">Post any inquery or and sugession</p>
                     <div className="relative mb-4">
@@ -39,7 +59,7 @@ export const Contact = () => {
                     </div>
                     <button className="text-white bg-[accent] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                     <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

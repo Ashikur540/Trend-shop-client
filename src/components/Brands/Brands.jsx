@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import Slider from 'react-slick'
 
@@ -27,9 +28,18 @@ export const Brands = () => {
         <div className="relative flex flex-col items-center overflow-hidden py-20 md:py-40 bg-gray-100 dark:bg-gray-800">
             <div className="container relative z-[1] m-auto px-6 md:px-12">
                 <div className="m-auto text-center md:w-8/12 lg:w-6/12">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-                        Our heroes <span className="text-[#FF965C]">contribute</span> to the development of tailus
-                    </h2>
+                    <motion.h2 className="text-3xl font-bold text-slate-900 dark:text-white md:text-4xl"
+                        initial={{ y: 60, opacity: 0, }}
+                        whileInView={{ y: 0, opacity: 100 }}
+                        transition={{
+                            delay: 0.2,
+                            x: { type: 'spring', stiffness: 60, },
+                            opacity: { duration: 1.6 },
+                            ease: 'easeIn',
+                            duration: 1
+                        }}>
+                        Our heroes <span className="text-accent">contribute</span> to the development of tailus
+                    </motion.h2>
                 </div>
                 <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
                     {/* <div className="flex flex-wrap justify-center gap-6">

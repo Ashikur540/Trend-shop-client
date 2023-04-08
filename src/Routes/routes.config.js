@@ -5,6 +5,7 @@ import { CategoryProducts } from "../Pages/Category products/CategoryProducts"
 import { Contact } from "../Pages/Contact/Contact"
 import ErrorPage from "../Pages/ErrorPage"
 import { Home } from "../Pages/Home"
+import { ProductDetails } from "../Pages/Product details/ProductDetails"
 import { Products } from "../Pages/Products/Products"
 import Signup from "../Pages/signup/Signup"
 
@@ -39,11 +40,20 @@ const router = createBrowserRouter([
                 element: <Blogs />,
             },
             {
+                path: '/productDetails',
+                element: <ProductDetails />,
+            },
+            {
                 path: '/products/:category',
 
                 loader: ({ params }) => fetch(`https://fakestoreapi.com/products/category/${params.category}`),
-
                 element: < CategoryProducts />,
+            },
+
+            {
+                path: '/product/:id',
+                loader: ({ params }) => fetch(`https://fakestoreapi.com/products/${params.id}`),
+                element: <ProductDetails />
             },
 
         ],

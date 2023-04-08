@@ -48,7 +48,7 @@ export const Brands = () => {
                     </div> */}
                     <Slider {...settings}>
                         {
-                            imgs.map(img => <div
+                            imgs.map((img, i) => <div key={i}
                                 className="max-w-[150px] group rounded-xl   dark:border-gray-600 bg-white bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
                             >
                                 <img

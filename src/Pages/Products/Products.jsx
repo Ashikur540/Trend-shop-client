@@ -14,12 +14,12 @@ export const Products = () => {
     }, [])
 
     return (
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 ">
-                <div class="flex flex-wrap -m-4 justify-center items-center py-20 ">
+        <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 ">
+                <div className="flex flex-wrap -m-4 justify-center items-center py-20 ">
                     {
                         products?.filter(product => product.category !== 'electronics')
-                            .map(products => <Link to="#" className="group relative w-[420px] max-w-md overflow-hidden">
+                            .map(products => <Link key={products.id} to="#" className="group relative w-[420px] max-w-md overflow-hidden">
 
                                 <button
                                     className="absolute right-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"

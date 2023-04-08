@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 export const CategoryProducts = () => {
     const products = useLoaderData()
     return (
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 ">
-                <div class="flex flex-wrap -m-4 justify-center items-center py-20 ">
+        <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 ">
+                <div className="flex flex-wrap -m-4 justify-center items-center py-20 ">
                     {
                         products?.filter(product => product.category !== 'electronics')
                             .map(products => <Link to="#" className="group relative w-[420px] max-w-md overflow-hidden">

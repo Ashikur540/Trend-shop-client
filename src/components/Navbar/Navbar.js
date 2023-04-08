@@ -8,9 +8,6 @@ export const Navbar = () => {
         { url: '/', name: 'Home' },
         { url: '/products', name: 'Products' },
         { url: '/blogs', name: 'Blogs' },
-        { url: '/productDetails', name: 'details' },
-
-
         { url: '/contact', name: 'Contact' },
     ]
 

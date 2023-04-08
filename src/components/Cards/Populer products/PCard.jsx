@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const PCard = ({ product }) => {
     const { title, price, category, description, image, rating, id } = product
     return (
-        <Link to={`/products/${id}`} className="w-full max-w-sm shadow-md mx-4 max-h-[500px] my-4 overflow-hidden transition-shadow duration-700">
+        <Link to={`/product/${id}`} className="w-full max-w-sm shadow-md mx-4 max-h-[500px] my-4 overflow-hidden transition-shadow duration-700">
             <figure className='p-1 overflow-hidden '>
                 <img
                     alt={title}

@@ -10,7 +10,8 @@ export const ProductDetails = () => {
 
         <div className="relative mx-auto max-w-screen-xl px-4 lg:px-14 py-32">
             <div>
-                <h1 className="text-2xl font-bold lg:text-3xl">Simple Clothes Basic Tee</h1>
+                <h1 className="text-2xl font-bold lg:text-3xl">Simple Clothes Basic Tee
+                </h1>
 
                 <p className="mt-1 text-sm text-gray-500">rating:🧡{rating?.rate}</p>
                 <p className="mt-1 text-sm text-gray-500">views:✅{rating?.count}</p>

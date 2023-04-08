@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from 'react-slick'
 
 export const Brands = () => {
     const imgs = [
@@ -11,7 +12,16 @@ export const Brands = () => {
         { src: 'https://www.svgrepo.com/show/303646/burberry-3-logo.svg', name: 'Burberry' },
 
     ]
-
+    const settings = {
+        // dots: true,
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+    }
     return (
 
         <div className="relative flex flex-col items-center overflow-hidden py-20 md:py-40 bg-gray-100 dark:bg-gray-800">
@@ -22,7 +32,7 @@ export const Brands = () => {
                     </h2>
                 </div>
                 <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
-                    <div className="flex flex-wrap justify-center gap-6">
+                    {/* <div className="flex flex-wrap justify-center gap-6">
                         {
                             imgs.map(img => <div
                                 className="max-w-[150px] group rounded-xl   dark:border-gray-600 bg-white bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
@@ -35,7 +45,21 @@ export const Brands = () => {
                                 />
                             </div>)
                         }
-                    </div>
+                    </div> */}
+                    <Slider {...settings}>
+                        {
+                            imgs.map(img => <div
+                                className="max-w-[150px] group rounded-xl   dark:border-gray-600 bg-white bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
+                            >
+                                <img
+                                    src={img.src}
+                                    className="contrast-0 transition group-hover:contrast-100 w-full"
+
+                                    alt={img.name}
+                                />
+                            </div>)
+                        }
+                    </Slider>
                 </div>
             </div>
         </div>

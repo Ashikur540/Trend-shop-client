@@ -38,7 +38,7 @@ export const Brands = () => {
                             ease: 'easeIn',
                             duration: 1
                         }}>
-                        Our heroes <span className="text-accent">contribute</span> to the development of tailus
+                        Our heroes <span className="text-accent">contribute</span> to the meet your needs
                     </motion.h2>
                 </div>
                 <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">

@@ -58,7 +58,7 @@ export const Navbar = () => {
                             aria-label="Sign up"
                             title="Sign up"
                         >
-                            Sign up
+                            Signup
                         </Link>
                     </li>
                 </ul>

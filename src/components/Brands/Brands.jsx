@@ -6,6 +6,9 @@ export const Brands = () => {
         { src: 'https://www.svgrepo.com/show/305958/dior.svg', name: 'dior' },
         { src: 'https://www.svgrepo.com/show/303252/chanel-2-logo.svg', name: 'channel' },
         { src: 'https://www.svgrepo.com/show/330039/bata.svg', name: 'bata' },
+        { src: 'https://www.svgrepo.com/show/443275/brand-nike.svg', name: 'nike' },
+        { src: 'https://www.svgrepo.com/show/303462/versace-medusa-2-logo.svg', name: 'Calvin Klein' },
+        { src: 'https://www.svgrepo.com/show/303646/burberry-3-logo.svg', name: 'Burberry' },
 
     ]
 

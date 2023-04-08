@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React from 'react';
 import { FaderisingUp } from '../../utilities/motions';
+import { BannerBottomText } from '../Banner text/BannerText';
 
 export const BannerBottom = () => {
     const { scrollYProgress } = useScroll();
@@ -10,9 +11,12 @@ export const BannerBottom = () => {
         <motion.section className='py-4 w-full  relative' initial="initial" animate="animate">
             <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row justify-between flex-wrap  gap-4 items-center px-8">
                 <motion.div className="flex gap-8 items-center" style={{ x }} variants={FaderisingUp}>
-                    <h1 className=" text-4xl md:text-7xl text-left font-bold leading-snug tracking-wide text-slate-900">
+                    {/* <h1 className=" text-4xl md:text-7xl text-left font-bold leading-snug tracking-wide text-slate-900">
                         Look
-                    </h1>
+                    </h1> */}
+                    <BannerBottomText>
+                        Look
+                    </BannerBottomText>
 
                     <div className="w-full md:w-1/2">
                         <p className="text-lg font-normal text-slate-700 tracking-wide">

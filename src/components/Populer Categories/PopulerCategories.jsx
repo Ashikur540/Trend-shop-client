@@ -16,7 +16,7 @@ export const PopulerCategories = () => {
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50  "
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
-                        <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                        <p className="text-sm font-medium uppercase tracking-widest text-accent">
                             #20% OFF
                         </p>
 
@@ -30,7 +30,7 @@ export const PopulerCategories = () => {
                                     Dressing for Success: A Guide to Men's Professional Attire.
 
                                 </p>
-                                <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                                <p className="text-sm font-medium uppercase tracking-widest text-accent">
                                     DISCOUNT CODE - VATR3920
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ export const PopulerCategories = () => {
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
-                        <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                        <p className="text-sm font-medium uppercase tracking-widest text-accent">
                             #30% OFF
                         </p>
 
@@ -59,7 +59,7 @@ export const PopulerCategories = () => {
                                     Dressing for Success: A Guide to Men's Professional Attire.
 
                                 </p>
-                                <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                                <p className="text-sm font-medium uppercase tracking-widest text-accent">
                                     DISCOUNT CODE - VATR3920
                                 </p>
                             </div>
@@ -74,7 +74,7 @@ export const PopulerCategories = () => {
                         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
                     <div className="relative p-4 sm:p-6 lg:p-8">
-                        <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                        <p className="text-sm font-medium uppercase tracking-widest text-accent">
                             #20% OFF
                         </p>
 
@@ -88,7 +88,7 @@ export const PopulerCategories = () => {
                                     Dressing for Success: A Guide to Men's Professional Attire.
 
                                 </p>
-                                <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                                <p className="text-sm font-medium uppercase tracking-widest text-accent">
                                     DISCOUNT CODE - TTR3920
                                 </p>
                             </div>

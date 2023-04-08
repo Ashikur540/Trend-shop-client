@@ -24,7 +24,7 @@ export const PCard = ({ product }) => {
                 </div>
                 <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-                    <button className="text-white bg-[#005162] hover:bg-[#FF833E] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center ">Add to cart</button>
+                    <button className="text-white bg-[accent] hover:bg-[accent] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center ">Add to cart</button>
                 </div>
             </div>
         </Link>

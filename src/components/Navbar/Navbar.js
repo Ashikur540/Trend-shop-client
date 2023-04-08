@@ -45,7 +45,7 @@ export const Navbar = () => {
                                 to={link.url}
                                 aria-label="Our product"
                                 title="Our product"
-                                className={({ isActive }) => isActive ? 'text-[#FF833E] font-bold' : `font-normal tracking-wide text-gray-700 transition-colors duration-700 hover:text-purple-accent-400`}
+                                className={({ isActive }) => isActive ? 'text-accent font-bold' : `font-normal tracking-wide text-gray-700 transition-colors duration-700 hover:text-purple-accent-400`}
                             >
                                 {link.name}
                             </NavLink>
@@ -55,7 +55,7 @@ export const Navbar = () => {
                     <li>
                         <Link
                             to="/"
-                            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#005162] hover:bg-[hsl(190,100%,19%)] focus:shadow-outline focus:outline-none"
+                            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-secondary hover:bg-[#0080C0] focus:shadow-outline focus:outline-none"
                             aria-label="Sign up"
                             title="Sign up"
                         >
@@ -143,7 +143,7 @@ export const Navbar = () => {
                                                     to={link.url}
                                                     aria-label="Our product"
                                                     title="Our product"
-                                                    className={({ isActive }) => isActive ? 'text-[#FF833E] font-bold' : `font-medium tracking-wide text-gray-700 transition-colors duration-700 hover:text-purple-accent-400`}
+                                                    className={({ isActive }) => isActive ? 'text-accent font-bold' : `font-medium tracking-wide text-gray-700 transition-colors duration-700 hover:text-purple-accent-400`}
                                                 >
                                                     {link.name}
                                                 </NavLink>
@@ -153,7 +153,7 @@ export const Navbar = () => {
                                         <li>
                                             <Link
                                                 to="/"
-                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#005162] hover:bg-[hsl(190,100%,19%)] focus:shadow-outline focus:outline-none"
+                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-secondary hover:bg-[hsl(190,100%,19%)] focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >

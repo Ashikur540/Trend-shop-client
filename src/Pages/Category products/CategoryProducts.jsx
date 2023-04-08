@@ -52,7 +52,7 @@ export const CategoryProducts = () => {
 
                                     <form className="mt-4">
                                         <button
-                                            className="block w-full rounded bg-[#005162] text-white p-4 text-sm font-medium transition hover:scale-105"
+                                            className="block w-full rounded bg-[accent] text-white p-4 text-sm font-medium transition hover:scale-105"
                                         >
                                             Add to Cart
                                         </button>

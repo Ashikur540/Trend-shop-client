@@ -1,4 +1,4 @@
-# <a href="https://clever-cheesecake-cc996f.netlify.app/">Trend fashion Shop</a>
+# [Trend Shop](https://sage-trifle-17daa5.netlify.app/)
 
 This is a single page e-shop website developed By <i>Ashikur Rahman </i>
 #🛡Technologies used:
